@@ -1,0 +1,9 @@
+<div class="content">
+    <ul class="nav-list">
+        <li class="nav-item" *ngFor="let item of navigationList">
+            <a routerLink="{{item.path}}" routerLinkActive="link-active">
+                {{item.name | titlecase}}
+            </a>
+        </li>
+    </ul>
+</div>

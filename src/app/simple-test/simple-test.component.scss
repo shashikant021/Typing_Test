@@ -1,0 +1,12 @@
+.appTest{
+    display: block;
+    width: 840px;
+}
+app-test-duration{
+    @extend .appTest;
+    margin: 1rem auto 1rem;
+}
+app-test-box{
+    @extend .appTest;
+    margin: 1rem auto;
+}

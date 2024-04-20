@@ -1,0 +1,149 @@
+.typing-sheet{
+    width: 840px;
+    height: 140px;
+    padding: 20px;
+    border-radius: 1rem;
+    margin: 1rem auto;
+    border: 0px solid var(--Gray700);
+    box-shadow: inset 0px 0px 10px var(--Gray500);
+}
+
+.visible-area{
+    width: 800px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.word-box{
+    position: relative;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.word{
+    padding: 0px 5px;
+    display: inline-block;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.typing-toolbar{
+    display: flex;
+    width: 840px;
+    height: 50px;
+    margin: 1rem auto;
+}
+
+.typing-field, .timer span, .refresh-button{
+    border: 1px solid var(--Gray500);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--Gray700);
+} 
+
+.typing-field{
+    width: 540px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 10px;
+    letter-spacing: .15rem;
+}
+.typing-field:focus{
+    outline: none;
+}
+
+.timer span, .refresh-button{
+    width: 150px;
+    height: 100%;
+    background-color: transparent;
+    transition: all 150ms ease-in;
+}
+
+.timer span:hover, .refresh-button:hover{
+    background-color: var(--Gray900);
+    color: white;    
+}
+.timer span{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-width: 1px 0px;
+    letter-spacing: 5px;
+}
+
+.refresh-button{
+    font-size: 1.3rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.result-box{
+    width: 400px;
+    margin: auto;
+}
+table{
+    margin-bottom: 0px;
+}
+thead, tfoot{
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: 600;
+}
+th{
+    color: var(--Yellow500);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+td span:nth-of-type(2){
+    color: var(--LightGreenA400);
+}
+    td span:nth-of-type(3){
+    color: red;
+    font-weight: 500;
+}
+
+.word.current-word{
+    background-color: var(--Gray300);
+    border-radius: 10px;
+}
+
+.word.current-word-wrong{
+    background-color: var(--DeepOrange700);
+    border-radius: 10px;
+}
+
+.word.correct-word{
+    color: var(--Green600);
+    border-radius: 10px;
+}
+.word.wrong-word{
+    color: var(--DeepOrange700);
+    border-radius: 10px;
+}
+.test-over-msg{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: .5rem;
+    color: var(--DeepOrange700);
+}
+.login-error-box{
+    text-align: center;
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: 500;
+    color: var(--DeepOrange700);
+    margin: .3rem;
+}
